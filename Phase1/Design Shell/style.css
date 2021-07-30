@@ -1,0 +1,50 @@
+.container{
+    width: 40%;
+    margin: 0 auto; /* Center the DIV horizontally */
+    
+}
+.container p {
+    line-height: 300px;
+    text-align: center;
+    font-style: oblique;
+    font-weight: bold;
+
+}
+.container h1 {
+    line-height: 20px;
+    text-align: center;
+
+}
+
+.header{
+    width: 75%;
+    position:absolute;
+    margin-left: 12%;    
+    background: #333;
+    padding: 5px 0;
+    color: #fff;
+    top: 100px;
+}
+
+.footer{
+    width: 75%;
+    position:fixed;
+    margin-left: 12%;    
+    background: #333;
+    padding: 5px 0;
+    color: #fff;
+    bottom:100px;
+
+}
+
+.body{
+    width: 75%;
+    position:absolute;
+    margin-left: 12%;    
+    background: #333;
+    padding: 10px 0;
+    color: #fff;
+    top:300px;
+}
+
+
