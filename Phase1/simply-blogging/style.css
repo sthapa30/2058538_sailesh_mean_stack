@@ -1,0 +1,20 @@
+section.latest-posts{
+    margin-top: 10px;
+}
+
+.blog-post {
+    margin-left: 200px;
+    margin-top: 10px;
+  }
+
+.blog-post .post-thumbnail img {
+    margin-bottom: 10px;
+  }
+
+.container{
+    margin-top: 20px;
+}
+
+.form-label{
+    font-weight: bold;
+}
