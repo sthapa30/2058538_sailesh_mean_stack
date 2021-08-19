@@ -1,0 +1,5 @@
+<h2>Portfolio Management</h2>
+
+<app-login *ngIf="userService.getLogin()"></app-login>
+<app-signup *ngIf="userService.getSignUp()"></app-signup>
+<app-portfolio *ngIf="userService.getPortfolio()"></app-portfolio>
