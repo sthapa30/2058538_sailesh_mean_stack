@@ -1,0 +1,16 @@
+<form class="example-form" #taskForm="ngForm" (ngSubmit)="addTask(taskForm)">
+    <mat-form-field class="example-full-width" appearance="fill">
+      ID: <input matInput class="fieldInput1" name="id" ngModel>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+        Name: <input matInput class="fieldInput2" name="taskName" ngModel>
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="fill">
+        Task: <input matInput class="fieldInput3" name="task" ngModel>
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="fill">
+        Deadline: <input type="date" matInput class="fieldInput4" name="deadline" ngModel>
+      </mat-form-field>
+      <button type="submit" mat-button mat-raised-button color="primary">Submit</button>
+      <button type="reset" mat-button color="primary">Reset</button>
+  </form>

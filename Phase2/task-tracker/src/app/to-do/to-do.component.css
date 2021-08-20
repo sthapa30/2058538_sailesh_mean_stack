@@ -1,0 +1,22 @@
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+    
+  }
+  .fieldInput1{
+      margin-left: 35px;
+  }
+  .fieldInput2{
+    margin-left: 10px;
+}
+.fieldInput3{
+    margin-left: 20px;
+}
+.fieldInput4{
+    margin-left: 1px;
+}
