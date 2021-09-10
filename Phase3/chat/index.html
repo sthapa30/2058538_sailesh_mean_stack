@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/JavaScript">
+        var socket = io();
+        socket.emit("obj","Hello Server I am client");
+        send = ()=>{
+            let msg = document.getElementById("message").value;
+            socket.emit("obj",`Client Say : ${msg}`);
+            document.getElementById("message").value="";
+            document.getElementById("response").innerHTML +='<div><b> Client: '+ msg+ '</b></div>';
+
+        }
+        socket.on("obj1",(msg)=>{
+            document.getElementById("response").innerHTML +='<div><b>'+ msg+ '</b></div>';
+        })
+    </script>
+</head>
+<body>
+    <h2>Socket programming</h2>
+    Messages: <input type="text" id="message"/><br>
+    <input type="button" value="Send" onclick="send()"/>
+    <div id="response"></div>
+
+
+</body>
+</html>
